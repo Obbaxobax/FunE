@@ -5,8 +5,9 @@ import os
 try:
     with open('games.txt') as t:
         text = t.read()
-        if text:
-            savedGames = json.load(t)
+        if text and text != "{}":
+            savedGames = json.loads(text)
+            print(savedGames)
         else:
             savedGames = {}
     
@@ -35,6 +36,7 @@ try:
 
     #Funny library
     w = wmi.WMI()
+    flag = False
 
     process_watcher = w.Win32_Process.watch_for("creation")
     while True:
@@ -44,11 +46,19 @@ try:
             print(funny + " has been found!")
             for i in savedGames:
                 if i == funny:
+                    flag = True
                     break
-            savedGames[funny] = new_process.CommandLine
-            with open("games.txt", "w") as t:
-                json.dump(savedGames, t)
 
+            if not flag:
+                #temp = new_process.CommandLine.replace("\"", '')
+                temp = (new_process.CommandLine.split('"')[1])
+                print(temp)
+                savedGames[funny] = temp
+                with open("games.txt", "w") as t:
+                    json.dump(savedGames, t)
+            else:
+                flag = False
+    
 finally:
     with open("games.txt", "w") as t:
         json.dump(savedGames, t)

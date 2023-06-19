@@ -1,0 +1,1 @@
+{"titanfall2.exe": "G:\\SteamLibrary\\steamapps\\common\\Titanfall2\\Titanfall2.exe", "valorant-win64-shipping.exe": "G:\\Riot Games\\VALORANT\\live\\ShooterGame\\Binaries\\Win64\\VALORANT-Win64-Shipping.exe"}
