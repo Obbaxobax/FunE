@@ -1,6 +1,23 @@
 import wmi
 import json
 import os
+from time import sleep
+from threading import Thread
+import pythoncom
+
+def getProcesses():
+    pythoncom.CoInitialize()
+    global big_process
+
+    w = wmi.WMI()
+    
+    process_watcher = w.Win32_Process.watch_for("creation")
+    while True:
+        sleep(1)
+        new_process = process_watcher()
+        big_process = new_process.Caption.lower()
+
+big_process = ""
 
 try:
     with open('games.txt') as t:
@@ -33,15 +50,18 @@ try:
             splited = g['name'].split("/")
             games.append(splited[len(splited)-1].lower())
 
-
     #Funny library
-    w = wmi.WMI()
     flag = False
 
-    process_watcher = w.Win32_Process.watch_for("creation")
+    x = Thread(target=getProcesses)
+    x.start()
+
     while True:
-        new_process = process_watcher()
-        funny = getGameFromList(new_process.Caption.lower())
+        sleep(1)
+
+        
+        
+        funny = getGameFromList(big_process)
         if funny:
             print(funny + " has been found!")
             for i in savedGames:
