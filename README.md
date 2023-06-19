@@ -1,3 +1,3 @@
 # FunnyGameThing
 
-<p>You need library wmi (L) \n Funny mode </p>
+<p>You need library wmi (L) /n Funny mode </p>
