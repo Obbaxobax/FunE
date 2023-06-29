@@ -1,4 +1,4 @@
-# FunnyGameThing
+# FunE Game Thingy (yes)
 
 <p>
 I'm just gonna keep adding odd libraries until the file size is infinite. <br>
