@@ -6,10 +6,12 @@ from threading import Thread
 from google_images_search import GoogleImagesSearch
 import pythoncom
 
+#-----------------API Stuff-----------------------
 pathz = 'Game Cover Arts'
 DK = 'AIzaSyBkwVyCi125GHnCXpqE3p1oTOH59I5zAmM'
 CX = '25777af3020ad413b'
 
+#-------------Process Detection-------------------
 active = True
 
 def getProcesses():
@@ -30,18 +32,19 @@ def getProcesses():
 big_process = ""
 big_path = ""
 
+
+#-----------------Main Script----------------------
 try:
     with open('games.txt') as t:
         text = t.read()
         if text and text != "{}":
             savedGames = json.loads(text)
-            print(savedGames)
         else:
             savedGames = {}
     
     games = {}
-    names = open('detectable.json')
-    data = json.load(names)
+    names = open('detectablesV2.txt')
+    games = json.load(names)
 
     def getGameFromList(name):
         for i in games:
@@ -49,46 +52,34 @@ try:
                 return i
         return False
 
-    for i in data:
-        listify = list(i)
-        if any("executables" in word for word in listify) == False:
-            continue
-        
-        for g in i['executables']:
-            if g['os'] != 'win32':
-                continue
-
-            splited = g['name'].split("/") 
-            games[splited[len(splited)-1].lower()] = i['name']
-
-    #Funny library
-    flag = False
+    #--------------Main Loop----------------------
+    savedFlag = False
 
     x = Thread(target=getProcesses)
     x.start()
 
     while True:
         sleep(1)
-
+        checkedGame = getGameFromList(big_process)
         
-        
-        funny = getGameFromList(big_process)
-        if funny:
-            print(funny + " has been found!")
+        if checkedGame:
+            print(checkedGame + " has been found!")
+            
             for i in savedGames:
-                if i == funny:
-                    flag = True
+                if i == checkedGame:
+                    savedFlag = True
                     break
 
-            if not flag:
-                #temp = new_process.CommandLine.replace("\"", '')
+            if not savedFlag:
                 temp = (big_path.split('"')[1])
-                print(temp)
-                savedGames[games[funny]] = [funny, temp]
+
+                savedGames[games[checkedGame]] = [checkedGame, temp]
+
+                #Save
                 with open("games.txt", "w") as t:
                     json.dump(savedGames, t)
             else:
-                flag = False
+                savedFlag = False
     
 finally:
     active = False
