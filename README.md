@@ -8,6 +8,6 @@ In the near future, a few things are planned.
   - Platform detection.
   - Actual UI.
 # Credits
-Coding and Temp UI - Obbax
+Coding and Temp UI - Obbax <br/>
 Idea and Future UI - Splefer
 
