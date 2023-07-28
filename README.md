@@ -1,5 +1,5 @@
 # FunE: Game Assistant
-![Logo](/MVP/temp.png)
+![Logo](/MVP/logo.png)
 ## What It Does
 FunE is an application with the goal of assisting users in managing games across many platforms. It tracks when a game is launched and notes its name and location. From this point, the game is added to the menu and can be launched from there.
 ## Future Plans
