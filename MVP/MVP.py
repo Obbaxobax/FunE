@@ -13,7 +13,7 @@ import urllib.request
 #Temp
 import dearpygui.dearpygui as dpg
 
-iconImg = PIL.Image.open("temp.png")
+iconImg = PIL.Image.open("logo.png")
 runbo = True
 
 refresh = Event()
