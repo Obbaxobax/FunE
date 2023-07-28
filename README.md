@@ -6,7 +6,7 @@ FunE is an application with the goal of assisting users in managing games across
 Only functions on windows. Just extract the folder the launch the EXE file. From there, it can be minimized and found in the system tray. Upon launching a game, the UI should update. (If I can code) The reset button will most likely break it, so just don't.
 ## Future Plans
 In the near future, a few things are planned.
-  - First functional build.
+  - Fix reset button.
   - Sales aggregator.
   - Platform detection.
   - Actual UI.
