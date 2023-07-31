@@ -1,155 +1,53 @@
-2023-07-29 14:40:38 DEBUG    Starting new HTTPS connection (1): id.twitch.tv:443
-2023-07-29 14:40:38 DEBUG    https://id.twitch.tv:443 "POST /oauth2/token?client_id=71mpsyy8zm8q94br1qtu3qco7ms9ez&client_secret=2v1cwaj8e39hxgi61fubwbnruji45i&grant_type=client_credentials HTTP/1.1" 200 93
-2023-07-29 14:40:39 DEBUG    Importing BlpImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing BmpImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing BufrStubImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing CurImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing DcxImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing DdsImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing EpsImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing FitsImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing FitsStubImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing FliImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing FpxImagePlugin
-2023-07-29 14:40:39 DEBUG    Image: failed to import FpxImagePlugin: No module named 'olefile'
-2023-07-29 14:40:39 DEBUG    Importing FtexImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing GbrImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing GifImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing GribStubImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing Hdf5StubImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing IcnsImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing IcoImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing ImImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing ImtImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing IptcImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing JpegImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing Jpeg2KImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing McIdasImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing MicImagePlugin
-2023-07-29 14:40:39 DEBUG    Image: failed to import MicImagePlugin: No module named 'olefile'
-2023-07-29 14:40:39 DEBUG    Importing MpegImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing MpoImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing MspImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PalmImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PcdImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PcxImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PdfImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PixarImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PngImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PpmImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing PsdImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing SgiImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing SpiderImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing SunImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing TgaImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing TiffImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing WebPImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing WmfImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing XbmImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing XpmImagePlugin
-2023-07-29 14:40:39 DEBUG    Importing XVThumbImagePlugin
-2023-07-29 14:44:00 DEBUG    Starting new HTTPS connection (1): id.twitch.tv:443
-2023-07-29 14:44:00 DEBUG    https://id.twitch.tv:443 "POST /oauth2/token?client_id=71mpsyy8zm8q94br1qtu3qco7ms9ez&client_secret=2v1cwaj8e39hxgi61fubwbnruji45i&grant_type=client_credentials HTTP/1.1" 200 93
-2023-07-29 14:44:00 DEBUG    Importing BlpImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing BmpImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing BufrStubImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing CurImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing DcxImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing DdsImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing EpsImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing FitsImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing FitsStubImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing FliImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing FpxImagePlugin
-2023-07-29 14:44:00 DEBUG    Image: failed to import FpxImagePlugin: No module named 'olefile'
-2023-07-29 14:44:00 DEBUG    Importing FtexImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing GbrImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing GifImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing GribStubImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing Hdf5StubImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing IcnsImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing IcoImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing ImImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing ImtImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing IptcImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing JpegImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing Jpeg2KImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing McIdasImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing MicImagePlugin
-2023-07-29 14:44:00 DEBUG    Image: failed to import MicImagePlugin: No module named 'olefile'
-2023-07-29 14:44:00 DEBUG    Importing MpegImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing MpoImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing MspImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PalmImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PcdImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PcxImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PdfImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PixarImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PngImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PpmImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing PsdImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing SgiImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing SpiderImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing SunImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing TgaImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing TiffImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing WebPImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing WmfImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing XbmImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing XpmImagePlugin
-2023-07-29 14:44:00 DEBUG    Importing XVThumbImagePlugin
-2023-07-29 14:44:05 INFO     Done
-2023-07-29 14:44:05 INFO     written to file
-2023-07-29 14:44:11 INFO     Process Watcher Closed
-2023-07-29 14:44:46 DEBUG    Starting new HTTPS connection (1): id.twitch.tv:443
-2023-07-29 14:44:47 DEBUG    https://id.twitch.tv:443 "POST /oauth2/token?client_id=71mpsyy8zm8q94br1qtu3qco7ms9ez&client_secret=2v1cwaj8e39hxgi61fubwbnruji45i&grant_type=client_credentials HTTP/1.1" 200 93
-2023-07-29 14:44:47 DEBUG    Importing BlpImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing BmpImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing BufrStubImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing CurImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing DcxImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing DdsImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing EpsImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing FitsImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing FliImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing FpxImagePlugin
-2023-07-29 14:44:47 DEBUG    Image: failed to import FpxImagePlugin: No module named 'olefile'
-2023-07-29 14:44:47 DEBUG    Importing FtexImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing GbrImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing GifImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing GribStubImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing Hdf5StubImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing IcnsImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing IcoImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing ImImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing ImtImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing IptcImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing JpegImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing Jpeg2KImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing McIdasImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing MicImagePlugin
-2023-07-29 14:44:47 DEBUG    Image: failed to import MicImagePlugin: No module named 'olefile'
-2023-07-29 14:44:47 DEBUG    Importing MpegImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing MpoImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing MspImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PalmImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PcdImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PcxImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PdfImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PixarImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PngImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PpmImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing PsdImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing QoiImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing SgiImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing SpiderImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing SunImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing TgaImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing TiffImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing WebPImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing WmfImagePlugin
-2023-07-29 14:44:47 DEBUG    Importing XbmImagePlugin
-2023-07-29 14:44:48 DEBUG    Importing XpmImagePlugin
-2023-07-29 14:44:48 DEBUG    Importing XVThumbImagePlugin
-2023-07-29 14:44:51 INFO     Done
-2023-07-29 14:44:51 INFO     written to file
+2023-07-30 21:52:00 DEBUG    Starting new HTTPS connection (1): id.twitch.tv:443
+2023-07-30 21:52:01 DEBUG    https://id.twitch.tv:443 "POST /oauth2/token?client_id=71mpsyy8zm8q94br1qtu3qco7ms9ez&client_secret=2v1cwaj8e39hxgi61fubwbnruji45i&grant_type=client_credentials HTTP/1.1" 200 93
+2023-07-30 21:52:01 DEBUG    Importing BlpImagePlugin
+2023-07-30 21:52:01 DEBUG    Importing BmpImagePlugin
+2023-07-30 21:52:01 DEBUG    Importing BufrStubImagePlugin
+2023-07-30 21:52:02 DEBUG    Importing CurImagePlugin
+2023-07-30 21:52:02 DEBUG    Importing DcxImagePlugin
+2023-07-30 21:52:02 DEBUG    Importing DdsImagePlugin
+2023-07-30 21:52:02 DEBUG    Importing EpsImagePlugin
+2023-07-30 21:52:17 DEBUG    Importing FitsImagePlugin
+2023-07-30 21:52:17 DEBUG    Importing FitsStubImagePlugin
+2023-07-30 21:52:17 DEBUG    Importing FliImagePlugin
+2023-07-30 21:52:17 DEBUG    Importing FpxImagePlugin
+2023-07-30 21:52:17 DEBUG    Image: failed to import FpxImagePlugin: No module named 'olefile'
+2023-07-30 21:52:17 DEBUG    Importing FtexImagePlugin
+2023-07-30 21:52:17 DEBUG    Importing GbrImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing GifImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing GribStubImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing Hdf5StubImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing IcnsImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing IcoImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing ImImagePlugin
+2023-07-30 21:52:18 DEBUG    Importing ImtImagePlugin
+2023-07-30 21:52:19 DEBUG    Importing IptcImagePlugin
+2023-07-30 21:52:19 DEBUG    Importing JpegImagePlugin
+2023-07-30 21:52:19 DEBUG    Importing Jpeg2KImagePlugin
+2023-07-30 21:52:19 DEBUG    Importing McIdasImagePlugin
+2023-07-30 21:52:19 DEBUG    Importing MicImagePlugin
+2023-07-30 21:52:19 DEBUG    Image: failed to import MicImagePlugin: No module named 'olefile'
+2023-07-30 21:52:19 DEBUG    Importing MpegImagePlugin
+2023-07-30 21:52:19 DEBUG    Importing MpoImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing MspImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PalmImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PcdImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PcxImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PdfImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PixarImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PngImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PpmImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing PsdImagePlugin
+2023-07-30 21:52:20 DEBUG    Importing SgiImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing SpiderImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing SunImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing TgaImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing TiffImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing WebPImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing WmfImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing XbmImagePlugin
+2023-07-30 21:52:21 DEBUG    Importing XpmImagePlugin
+2023-07-30 21:52:22 DEBUG    Importing XVThumbImagePlugin
+2023-07-30 21:52:26 INFO     Done
+2023-07-30 21:52:26 INFO     written to file
+2023-07-30 21:52:36 INFO     Process Watcher Closed
