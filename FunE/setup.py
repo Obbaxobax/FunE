@@ -3,8 +3,8 @@ from cx_Freeze import setup, Executable
 
 # Dependencies are automatically detected, but it might need fine tuning.
 build_exe_options = {
-    "excludes": [],
-    "zip_include_packages": [],
+    "excludes": ["tkinter", "curses", "jinja2"],
+    "zip_include_packages": ["wmi", "requests", "certifi", "charset-normalizer", "idna", "urllib3", "PIL", "six", "os", "json", "time", "threading", "pythoncom", "pystray", "sys", "urllib", "subproceess", "logging", "dearpygui"],
 }
 
 # base="Win32GUI" should be used only for Windows GUI app

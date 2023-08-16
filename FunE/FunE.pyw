@@ -15,7 +15,7 @@ import logging
 #Temp
 import dearpygui.dearpygui as dpg
 
-iconImg = PIL.Image.open("logo.png")
+iconImg = PIL.Image.open(os.getcwd() + "\logo.png")
 
 refresh = Event()
 runbo = Event()
@@ -45,16 +45,20 @@ class StreamToLogger(object):
     def flush(self):
         pass
 
+logging.getLogger("requests").setLevel(logging.WARNING)
+logging.getLogger("urllib").setLevel(logging.WARNING)
+
 logging.basicConfig(
     format='%(asctime)s %(levelname)-8s %(message)s',
     filename='logs.txt',
-    level=logging.DEBUG,
+    level=logging.INFO,
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
 log = logging.getLogger('foobar')
 sys.stdout = StreamToLogger(log,logging.INFO)
 sys.stderr = StreamToLogger(log,logging.ERROR)
+
 
     #-------------Check for Internet----------------------
 def connect(host='http://google.com'):
@@ -94,6 +98,28 @@ def getNewToken(timeUntilExpired):
     t.start()
 
 getAPIToken()
+
+#Load tray icon
+def on_clicked(icon, item):
+    runbo.clear()
+
+def iconFunc():
+    icon.run()
+
+def on_activate(icon, item):
+    global minimized
+    minimized = False
+    #updateUI()
+    T = Thread(target=dpgLoop, daemon=True)
+    T.start()
+
+icon = pystray.Icon("FunE", iconImg, menu=pystray.Menu(
+    pystray.MenuItem("Exit", on_clicked),
+    pystray.MenuItem("Open", on_activate, default=True, visible=False)
+))
+
+f = Thread(target=iconFunc, daemon=True)
+f.start()
 
 def getCoverImage(i):
     try:
@@ -184,27 +210,6 @@ with open('games.json') as t:
 
 names = open('detectablesV2.json')
 games = json.load(names)
-
-def on_clicked(icon, item):
-    runbo.clear()
-
-def iconFunc():
-    icon.run()
-
-def on_activate(icon, item):
-    global minimized
-    minimized = False
-    #updateUI()
-    T = Thread(target=dpgLoop, daemon=True)
-    T.start()
-
-icon = pystray.Icon("FunE", iconImg, menu=pystray.Menu(
-    pystray.MenuItem("Exit", on_clicked),
-    pystray.MenuItem("Open", on_activate, default=True, visible=False)
-))
-
-f = Thread(target=iconFunc, daemon=True)
-f.start()
 
 def openGame(sender, app_data, user_data):
     try:
