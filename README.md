@@ -6,6 +6,7 @@ FunE is an application with the goal of assisting users in managing games across
 Only functions on windows. Just extract the folder the launch the EXE file. From there, it can be minimized and found in the system tray. Upon launching a game, the UI should update. (If I can code)
 
 If the version is updated, data can be transferred by copying the games.json and covers file from the old version and replacing the ones in the new version.
+[https://github.com/Obbaxobax/FunE/releases/tag/v0.1.4](Latest Release)
 ## Future Plans
 In the near future, a few things are planned.
   - Sales aggregator.
