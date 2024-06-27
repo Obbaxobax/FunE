@@ -73,7 +73,8 @@ def getAPIToken():
     global token
     
     if connect():
-        respo = requests.post("https://id.twitch.tv/oauth2/token?client_id=71mpsyy8zm8q94br1qtu3qco7ms9ez&client_secret=2v1cwaj8e39hxgi61fubwbnruji45i&grant_type=client_credentials")
+        #Move keys to env file
+        respo = requests.post("https://id.twitch.tv/oauth2/token?client_id=[REDACTED]&client_secret=[REDACTED]&grant_type=client_credentials")
 
         if not respo.status_code == requests.codes.ok:
             logging.warning("API Request Failed")
